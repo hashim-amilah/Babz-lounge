@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subfm.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+   
+    <title>SUBSCRIBTION</title>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <nav>
+        <img src="logo.png" alt="">
+        <h1 class ="name">BABZ <spam>LOUNGE</spam></h1>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="booking.html">BOOKINGS</a></li>
+          <li><a href="about us.html">ABOUT US</a></li>
+        </ul>
+        <a href="#" class="sub">SUBSCRIBE</a>
+        <!-- <button type="button">SUBSCRIBE</button> -->
+      </nav>
+    </div>
+    </header>
+    <!-- <h2>Become a subcriber!</h2> -->
+    <div class="image">
+        <h2>Become a subcriber!</h2>
+        <img src="subs.jpg">
+        <p>subscribe to our blog and get the latest updates<br>
+           and newsletters straight to your inbox. 
+        </p>
+        <form id="myForm" onsubmit="return validateForm()">
+          <div class="forms">
+            <p></p>
+            <label for="name"><br> </label>
+            <input type="email" id="name" placeholder="E-MAIL ADDRESS" required><br><br>
+              
+    <div class="bt">
+      <input type="submit" value="SUBMIT">
+  
+    </div>
+      </div>
+
+
+      <!-- <form id="myForm" onsubmit="return validateForm()">
+        <div class="forms">
+          <p></p>
+          <label for="name">E-MAIL ADDRESS  </label>
+          <input type="email" id="name" name="name" required><br><br>
+            
+  <div class="bt">
+    <input type="submit" value="SUBMIT">
+
+  </div> -->
+
+</div>
+</form>
+
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  if (name === "") {
+    alert("Please enter your name");
+    return false; // Prevent form submission
+  }
+  alert("Subscribed successfuly")
+  return true; // Allow form submission
+}
+</script>
+        
+        <!-- <div class="form-field">
+            <p>E-mail ADDRESS</p>
+            <input required="email" placeholder="your email address" >
+        </div>
+    </div>
+
+    <div class="popup">
+        <button onclick="showAlert()">SUBSCRIBE</button>
+      </div>
+      <div id="alertPopup" class="alert">
+        <span class="close" onclick="closeAlert()">&times;</span>
+        <img src="sub2.avif">
+        <p>Successfull!<br>
+            Thanks for subscribing with us
+        </p>
+      </div> -->
+    
+      <!-- <script src="script.js"></script> -->
+    <!-- <img src="subs.jpg"> -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col1">
+              <h3><iota>COMPANY</iota></h3>
+              <br>
+              <p>
+    
+                Privacy Policy <br>
+                Terms And Conditions <br>
+                FAQ <br>
+                Payment Status<br>
+              </p>
+              
+            </div>
+            <div class="footer-col2">
+              <h3><iota>ADDRESS</iota></h3>
+              <br>
+                <p>
+                  Lamido Aliyu Mustapha way<br>
+                  Plot 6/7 Royal Avenues Adamawa<br>
+                  State Yola south, Nigeria <br>
+                  PO BOX 1345<br>
+      
+                </p>
+                
+              </div>
+              <div class="footer-col3">
+              <h3><iota>CONTACT US</iota></h3>
+              <br>
+              <p>
+                babzlounge@gmail.com <br>
+                babzloungeinfo@yahoo.com<br>
+                Phone No: +234 8154591088<br>
+                phone N0: +234 8101411423<br>
+      
+              </p>
+              
+            </div>
+            <div class="footer-col4">
+              <h3><iota>SOCIAL MEDIA</iota></h3>
+              <br>
+              <div class="social-links">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-whatsapp"></i></a>
+                  <p>
+                    Follows Us OR<br>
+                    Chat With Us<br>
+                  </p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+</body>
+</html>  

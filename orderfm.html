@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="restorder.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+   
+    <title>ORDER FORM</title>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <nav>
+        <img src="logo.png" alt="">
+        <h1 class ="name">BABZ <spam>LOUNGE</spam></h1>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="booking.html">BOOKINGS</a></li>
+          <li><a href="about us.html">ABOUT US</a></li>
+        </ul>
+        <a href="subform.html" class="sub">SUBSCRIBE</a>
+        <!-- <button type="button">SUBSCRIBE</button> -->
+      </nav>
+    </div>
+    </header>
+
+    <h2>ADD TO CART</h2>
+  <!-- <div class="wrapper">
+    <div class="form">
+      <div class="input-field">
+        <label>SURNAME </label>
+        <input type="text" class="input">
+      </div>
+
+      <div class="input-field">
+        <label>FIRST NAME </label>
+        <input type="text" class="input">
+      </div>
+
+      <div class="input-field">
+        <label>E-MAIL ADDRESS </label>
+        <input type="text" class="input">
+      </div>
+
+      <div class="input-field">
+        <label>HOME ADDRESS </label>
+        <input type="text" class="input">
+      </div>
+
+      <div class="input-field">
+        <label>POSTAL CODE</label>
+        <input type="text" class="input">
+      </div>
+
+      <div class="input-field">
+        <label>PHONE NUMBER</label>
+        <input type="text" class="input">
+      </div>
+
+      <div class="input-field">
+        <label>MODE OF PAYMENT </label>
+       <div class="custom_select">
+        <select>
+          <option value="">select</option>
+          <option value="transfer">Transfer</option>
+          <option value="card">CARD</option>
+          <option value="cash">CASH</option>
+        </select>
+       </div>
+      </div>
+
+      <div class="input_field terms">
+        <label class="check">
+          <input type="checkbox">
+          <spa class="checkmark"></spa>
+        </label>
+        <p>Agreed to Terms & Conditions and charges may apply if late.</p>
+      </div>
+
+    </div>
+</div>
+
+<div class="popup">
+    <button onclick="showAlert()">SUBMIT</button>
+  </div>
+  <div id="alertPopup" class="alert">
+    <span class="close" onclick="closeAlert()">&times;</span>
+    <img src="tick.avif">
+    <p>Your order has been succesfully received!</p>
+  </div>
+
+  <script src="script.js"></script> -->
+
+  
+
+  <!-- <form class="form">
+    
+        <div class="flex">
+         
+    
+    <p>NAME</p>
+    <label> 
+      <input required="" placeholder="" type="text" class="input">
+      
+    </label>
+    
+    <P>EMAIL ADDRESS</P>   
+    <label>
+        <input required="" placeholder="" type="email" class="input">
+
+    </label> 
+
+     <P>HOME ADDRESS</P>   
+    <label>
+        <input required="" placeholder="" type="text" class="input">
+        
+    </label>
+
+    <P>POSTAL CODE</P>
+    <label>
+        <input required="" placeholder="" type="text" class="input">
+        
+    </label>
+
+    <p>PHONE NUMBER</p>
+    <label>
+      <input required="" placeholder="" type="text" class="input">
+    </label>
+
+    <p>MODE OF PAYMENT</p>
+    <select>
+      <option value="">select</option>
+      <option value="transfer">Transfer</option>
+      <option value="card">CARD</option>
+      <option value="cash">CASH</option>
+    </select>
+
+    <label class="check">
+      <input type="checkbox">
+      <spa class="checkmark"></spa>
+    </label>
+    <p>Agreed to Terms & Conditions and charges may apply if late.</p>
+
+    <button class="submit">Submit</button>
+  </div> 
+</form> -->
+
+
+
+<form id="myForm" onsubmit="return validateForm()">
+  <div class="forms">
+
+  <label for="name"> <br> </label>
+  <input type="text" id="name" placeholder="SURNAME" class="txt-area" required><br><br>
+
+  <label for="name"> <br> </label>
+  <input type="text" id="name" placeholder="FIRSTNAME" required class="txt-area"><br><br>
+
+  <label for="name"> <br> </label>
+  <input type="email" id="name" placeholder="E-MAIL ADDRESS" class="txt-area" required><br><br>
+
+  <label for="name"> <br> </label>
+  <input type="text" id="name" placeholder="HOME ADDRESS" class="txt-area" required><br><br>
+
+  <label for="name"> <br> </label>
+  <input type="number" id="name" placeholder="POSTAL CODE" class="txt-area" required><br><br>
+
+  <label for="name">  <br> </label>
+  <input type="number" id="name" placeholder=" PHONE NUMBER" class="txt-area" required><br><br>
+  
+
+  <label for="name">   <br> </label>
+  <select>
+    <option value="">MODE OF PAYMENT</option>
+    <option value="transfer" required>Transfer</option>
+    <option value="card" >CARD</option>
+    <option value="cash" >CASH</option>
+  </select><br>
+
+  <div class="checks">
+    <!-- <label class="check"> -->
+      <!-- <input type="checkbox"> -->
+      <!-- <spa class="checkmark"></spa> -->
+      
+      <label for="name"><input type="checkbox" class="checkbx" required>Agreed to terms and Conditions.</label>
+</div>
+  <!-- <label class="check">
+    <input type="checkbox">
+    <spa class="checkmark"></spa>
+  </label> -->
+  
+   
+  <div class="bt">
+    <input type="submit" value="SUBMIT">
+
+  </div>
+
+  <!-- <input type="submit" value="Submit"> -->
+
+</div>
+</form>
+
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  if (name === "") {
+    alert("Please enter your name");
+    return false; // Prevent form submission
+  }
+  alert("Order Accepted")
+  return true; // Allow form submission
+}
+</script>
+</body>
+</html>
+
+
+
+  <!-- <a href="orderfm.html" class="back">RESET</a> -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col1">
+          <h3><iota>COMPANY</iota></h3>
+          <br>
+          <p>
+
+            Privacy Policy <br>
+            Terms And Conditions <br>
+            FAQ <br>
+            Payment Status<br>
+          </p>
+          
+        </div>
+        <div class="footer-col2">
+          <h3><iota>ADDRESS</iota></h3>
+          <br>
+            <p>
+              Lamido Aliyu Mustapha way<br>
+              Plot 6/7 Royal Avenues Adamawa<br>
+              State Yola south, Nigeria <br>
+              PO BOX 1345<br>
+  
+            </p>
+            
+          </div>
+          <div class="footer-col3">
+          <h3><iota>CONTACT US</iota></h3>
+          <br>
+          <p>
+            babzlounge@gmail.com <br>
+            babzloungeinfo@yahoo.com<br>
+            Phone No: +234 8154591088<br>
+            phone N0: +234 8101411423<br>
+  
+          </p>
+
+        
+          
+        </div>
+        <div class="footer-col4">
+          <h3><iota>SOCIAL MEDIA</iota></h3>
+          <br>
+          <div class="social-links">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-whatsapp"></i></a>
+              <p>
+                Follows Us OR<br>
+                Chat With Us<br>
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>   
